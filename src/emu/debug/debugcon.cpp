@@ -579,6 +579,7 @@ std::string debugger_console::cmderr_to_string(CMDERR error)
 
 void debugger_console::print_core(std::string_view text)
 {
+    std::cout << text << std::endl;
 	text_buffer_print(*m_console_textbuf, text);
 	if (m_logfile)
 		m_logfile->write(text.data(), text.length());
@@ -592,6 +593,7 @@ void debugger_console::print_core(std::string_view text)
 void debugger_console::print_core_wrap(std::string_view text, int wrapcol)
 {
 	// FIXME: look into honoring wrapcol for the logfile
+    std::cout << text << std::endl;
 	text_buffer_print_wrap(*m_console_textbuf, text, wrapcol);
 	if (m_logfile)
 		m_logfile->write(text.data(), text.length());
