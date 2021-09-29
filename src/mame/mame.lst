@@ -41982,6 +41982,9 @@ vectrex                         // General Consumer Electric Vectrex - 1982-1984
 @source:vectrix.cpp
 vectrix                         // (c) 19?? Olympia?
 
+@source:cubic.cpp
+cubic                           // (c) 2021 Henkru
+
 @source:vega.cpp
 vega                            // (c) 19?? Olympia?
 
