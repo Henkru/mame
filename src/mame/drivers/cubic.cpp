@@ -48,7 +48,8 @@ void cubic_state::cubic(machine_config &config)
 
 ROM_START( cubic )
 	ROM_REGION( 0x4000, "roms", 0 )
-	ROM_LOAD( "cubic.bin", 0x0000, 0x4000, CRC(10b93e38) SHA1(0b1a23d384bfde4cd27c482f667eedd94f8f2406) )
+	ROM_LOAD( "cubic-aa", 0x0000, 0x2000, CRC(10b93e38) SHA1(0b1a23d384bfde4cd27c482f667eedd94f8f2406) )
+	ROM_LOAD( "cubic-ab", 0x2000, 0x2000, CRC(10b93e38) SHA1(0b1a23d384bfde4cd27c482f667eedd94f8f2406) )
 ROM_END
 
 COMP( 2021, cubic, 0, 0, cubic, cubic, cubic_state, empty_init, "Cubic", "Cubic 8088", MACHINE_IS_SKELETON )
